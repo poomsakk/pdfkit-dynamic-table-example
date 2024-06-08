@@ -92,7 +92,7 @@ function generateDataInTable(doc: PDFKit.PDFDocument, ip: TInput) {
       generateHeader(doc, ip);
       generateTable(doc);
       posY = 230;
-      nextY = posY + offset * 18 - offset * 4;
+      nextY = posY + offset * DEFAULT_HEIGHT;
     }
     doc
       .text(`${index}`, 63, posY)
